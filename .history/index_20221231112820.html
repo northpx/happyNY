@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hour</title>
+</head>
+<body>
+    <h1 class="newYear">2023<br><span>HAPPY NEW YEAR</span></h1>
+    <div id="time">
+        <div class="circle" style="--clr:#ffffff;">
+            <div class="dots day_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+            </svg>
+            <div id="days">00<br><span>DAYS</span></div>
+        </div>
+        <div class="circle" style="--clr:#ff2972;">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours">00<br><span>HOURS</span></div>
+        </div>
+        <div class="circle" style="--clr:#fee800;">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes">00<br><span>MINUTES</span></div>
+        </div>
+        <div class="circle" style="--clr:#04fc43;">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds">00<br><span>SECONDS</span></div>
+        </div>
+    </div>
+
+    <script>
+        let days = document.getElementById("days")
+        let hours = document.getElementById("hours")
+        let minutes = document.getElementById("minutes")
+        let seconds = document.getElementById("seconds")
+
+        let dd = document.getElementById("dd")
+        let hh = document.getElementById("hh")
+        let mm = document.getElementById("mm")
+        let ss = document.getElementById("ss")
+
+        let day_dot = document.querySelector(".day_dot")
+        let hr_dot = document.querySelector(".hr_dot")
+        let min_dot = document.querySelector(".min_dot")
+        let sec_dot = document.querySelector(".sec_dot")
+
+        let endDate = '01/01/2023 00:00:00'
+
+        let x = setInterval(function(){
+            let now = new Date(endDate).getTime();
+            let countDown = new Date().getTime();
+            let distance = now - countDown;
+
+            let 
+        })
+    </script>
+</body>
+</html>

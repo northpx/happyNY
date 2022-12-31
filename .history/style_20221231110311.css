@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.time .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.time .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #282828;
+    transform: translate(5px, 5px);
+}
+#days, #minutes, #hours, #seconds{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+
+.time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.time div span{
+    position: absolute;
+    transform: translate(-50%,-5px);
+    font-size: 0.35em;
+
+}
